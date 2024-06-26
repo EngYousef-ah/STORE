@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <link rel="stylesheet" type="text/css" href="cart.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+  </head>
+  <body>
+    <div id="cart-page">
+      <div id="EP">
+        <table id="table">
+          <h1>Cart</h1>
+          <thead>
+            <tr>
+              <th>product</th>
+              <th>price</th>
+              <th>quantity</th>
+            </tr>
+          </thead>
+          <tbody id="cart-itmes">
+            <tr>
+              <td>Digital clock with lamp and wireless charger</td>
+              <td>80$</td>
+              <td id="select">
+                <input type="number" name="quantity1" value="1" min="1" />
+              </td>
+            </tr>
+            <tr>
+              <td>Lightning</td>
+              <td>65$</td>
+              <td id="select">
+                <input type="number" name="quantity2" value="1" min="1" />
+              </td>
+            </tr>
+            <tr>
+              <td>Keyboard</td>
+              <td>30$</td>
+              <td id="select">
+                <input type="number" name="quantity3" value="1" min="1" />
+              </td>
+            </tr>
+            <tr>
+              <td>iphone 15</td>
+              <td>1100$</td>
+              <td id="select">
+                <input type="number" name="quantity3" value="1" min="1" />
+              </td>
+            </tr>
+            <tr>
+              <td>Laptop</td>
+              <td>950$</td>
+              <td id="select">
+                <input type="number" name="quantity3" value="1" min="1" />
+              </td>
+            </tr>
+            <tr>
+              <td>Redmi Not 12</td>
+              <td>400$</td>
+              <td id="select">
+                <input type="number" name="quantity3" value="1" min="1" />
+              </td>
+            </tr>
+            <tr>
+              <td>Nikon Camera</td>
+              <td>750$</td>
+              <td id="select">
+                <input type="number" name="quantity3" value="1" min="1" />
+              </td>
+            </tr>
+            <tr>
+              <td>Charger</td>
+              <td>45$</td>
+              <td id="select">
+                <input type="number" name="quantity3" value="1" min="1" />
+              </td>
+            </tr>
+            <tr>
+              <td>Microphone</td>
+              <td>120$</td>
+              <td id="select">
+                <input type="number" name="quantity3" value="1" min="1" />
+              </td>
+            </tr>
+            <tr>
+              <td>Table Lightning</td>
+              <td>35$</td>
+              <td id="select">
+                <input type="number" name="quantity3" value="1" min="1" />
+              </td>
+            </tr>
+            <tr>
+              <td>Apple Watch</td>
+              <td>350$</td>
+              <td id="select">
+                <input type="number" name="quantity3" value="1" min="1" />
+              </td>
+            </tr>
+            <tr>
+              <td>Apple iPad</td>
+              <td>800$</td>
+              <td id="select">
+                <input type="number" name="quantity3" value="1" min="1" />
+              </td>
+            </tr>
+            <tr>
+              <td>Swimming Headphones</td>
+              <td>50$</td>
+              <td id="select">
+                <input type="number" name="quantity3" value="1" min="1" />
+              </td>
+            </tr>
+            <tr>
+              <td>WIFI Router</td>
+              <td>99$</td>
+              <td id="select">
+                <input type="number" name="quantity3" value="1" min="1" />
+              </td>
+            </tr>
+            <tr>
+              <td>Digital watch with magnetic timer</td>
+              <td>75$</td>
+              <td id="select">
+                <input type="number" name="quantity3" value="1" min="1" />
+              </td>
+            </tr>
+            <tr>
+              <td>PlayStation 5</td>
+              <td>1000$</td>
+              <td id="select">
+                <input type="number" name="quantity3" value="1" min="1" />
+              </td>
+            </tr>
+            <tr>
+              <td>Wireless Speaker</td>
+              <td>65$</td>
+              <td id="select">
+                <input type="number" name="quantity3" value="1" min="1" />
+              </td>
+            </tr>
+            <tr>
+              <td>Bluetooth Headphone</td>
+              <td>120$</td>
+              <td id="select">
+                <input type="number" name="quantity3" value="1" min="1" />
+              </td>
+            </tr>
+            <tr>
+              <td>Lightstation</td>
+              <td>30$</td>
+              <td id="select">
+                <input type="number" name="quantity3" value="1" min="1" />
+              </td>
+            </tr>
+            <tr>
+              <td>Apple Airpods</td>
+              <td>180$</td>
+              <td id="select">
+                <input type="number" name="quantity3" value="1" min="1" />
+              </td>
+            </tr>
+            <br /><br />
+          </tbody>
+        </table>
+        <a href="index.html">
+          <button id="button">Send</button>
+        </a>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const cartItems = document.getElementById("cart-items");
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        cart.forEach((item) => {
+          const cartItem = document.createElement("li");
+          cartItem.textContent = item.name + " (price " + item.id + ")";
+          cartItems.appendChild(cartItem);
+        });
+      });
+    </script>
+  </body>
+</html>

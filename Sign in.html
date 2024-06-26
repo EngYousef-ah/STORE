@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+    <link rel="stylesheet" href="sign in-up.css" />
+  </head>
+  <body>
+    <!-- enter email and password-->
+    <div id="Sign-In-page">
+      <div id="EP">
+        <h1>Sign In</h1>
+        <div id="Email">
+          <input type="text" id="email" placeholder="E-Mail" />
+        </div>
+        <div id="Pass">
+          <input type="password" id="password" placeholder="Password" />
+        </div>
+
+        <div id="btnsignin">
+          <a href="#">Forgot Your Password?</a
+          ><span
+            >don't have an account?
+            <a href="sign-up.html" target="_blank"> register!</a></span
+          >
+        </div>
+        <a href="index.html">
+          <button> sign in </button>  
+        </a>
+        
+      <div></div>
+    </div>
+    <script>
+      function signIn() {
+        // Retrieve email and password values
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        // verify user data
+        if (email === "user@example.com" && password === "password") {
+          alert("Login successful!");
+          // Redirect the user to the appropriate page after successful login
+          //window.location.href = "index.html";
+        } else {
+          alert("Invalid login attempt.");
+        }
+      }
+    </script>
+  </body>
+</html>

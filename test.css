@@ -1,0 +1,17 @@
+#icon {
+    position: absolute;
+    align-items: center;
+ color:black;
+    font-size: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#icon:hover{
+    background-position: 0 100%;
+    color: #1a8dff;
+}
+
+
+
+ 

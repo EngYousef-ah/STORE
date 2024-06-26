@@ -1,0 +1,418 @@
+body {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+#header {
+  background-color: #1a8dff;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  padding: 20px 15px 8px 30px;
+  right: auto;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+
+  /* Hide search bar on smaller screens */
+  #searchbar {
+    display: none;
+  }
+
+  /* Adjust font size for smaller screens */
+  #landing_page h1 {
+    font-size: 18px;
+  }
+
+  /* Hide header links on smaller screens */
+  #Header_links a {
+    display: none;
+  }
+}
+
+#Header_links a {
+  color: white;
+  padding: 5px 25px;
+  text-decoration: none;
+  border-radius: 500px;
+
+  right: 10px;
+}
+
+#headerlinksbtn button {
+  background-color: #dda923;
+  color: white;
+  border: none;
+  border-radius: 500px;
+  padding: 5px 25px;
+  justify-content: space-between;
+}
+
+#Header_links a:hover {
+  background-color: #67b3ff;
+}
+
+#headerlinksbtn button:hover {
+  background-color: #e7c365;
+}
+
+#landing_page {
+  background-color: #1a8dff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px 8px 30px;
+  color: white;
+  border-radius: 0px 0px 50px 50px;
+  z-index: -1;
+}
+
+#landing_page_width {
+  width: 100%;
+  height: 100svh;
+}
+
+#search {
+  background-color: #dda923;
+  color: white;
+  border: none;
+  border-radius: 500px;
+  padding: 5px 25px;
+  position: absolute;
+  left: 185px;
+}
+
+#search:hover {
+  background-color: #e7c365;
+}
+
+#searchbar {
+  border-radius: 50px;
+  padding: 5px 5px 5px 10px;
+  border: none;
+  outline: none;
+  position: absolute;
+}
+
+#btnadd {
+  background-color: #dda923;
+  color: white;
+  border: none;
+  border-radius: 500px;
+  padding: 5px 25px;
+  right: 50px;
+  align-items: center;
+}
+
+#landing_page_image img {
+  width: 250px;
+  border-radius: 30px;
+  padding: 0px 15px 15px 0px;
+}
+
+.Products {
+  padding: 20px 15px 8px 30px;
+  display: flex;
+  align-items: center;
+}
+
+.Products button {
+  background-color: #dda923;
+  color: white;
+  border: none;
+  border-radius: 500px;
+  padding: 5px 25px;
+  position: absolute;
+  right: 50px;
+}
+
+.Products button:hover {
+  background-color: #e7c365;
+}
+
+.Products_cards {
+  display: flex;
+  margin-left: 60px;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+#cards {
+  width: 260px;
+  background-color: #ececec;
+  border-radius: 20px;
+}
+
+#cards:hover {
+  background-color: #dda923;
+}
+
+/* Base styles */
+#cards .pic {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+
+  /* Adjust the width for smaller screens */
+  #cards .pic {
+    width: 100%;
+  }
+
+  #cards {
+    width: 40%;
+    background-color: #ececec;
+    border-radius: 20px;
+  }
+
+  #landing_page_image img {
+    width: 180px;
+    border-radius: 30px;
+    padding: 0px 15px 15px 0px;
+    z-index: -1;
+    top: 20%;
+  }
+
+  #landing_page p {
+    font-size: 15px;
+    margin: 0px 0px 50px 10px;
+  }
+
+  .Products_cards {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #searchbar {
+    border-radius: 50px;
+    padding: 5px 5px 5px 10px;
+    border: none;
+    outline: none;
+    position: absolute;
+    bottom: 0;
+  }
+
+}
+
+@media screen and (max-width: 859px) {
+  .Products_cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #cards {
+    width: 40%;
+    background-color: #ececec;
+    border-radius: 20px;
+  }
+
+  #cards .pic {
+    width: 100%;
+  }
+
+  #landing_page_image img {
+    width: 120px;
+    border-radius: 30px;
+    padding: 0px 15px 15px 0px;
+    position: relative;
+    top: 20%;
+  }
+
+  .Products_cards {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* Additional styles for #card_info can be added here */
+#card_info {
+  display: flex;
+  align-items: center;
+  padding: 5px 25px;
+  justify-content: space-between;
+}
+
+.rating {
+  color: #dda923;
+  align-items: center;
+  display: flex;
+}
+
+/* Students Section */
+#Students {
+  background-color: #1a8dff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px 8px 30px;
+  color: white;
+  border-radius: 0px 0px 50px 50px;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+
+#icon {
+  color: black;
+  font-size: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+  align-items: center;
+}
+
+#icon:hover {
+  background-position: 0 100%;
+  color: #1a8dff;
+}
+
+/* Sign-In Page */
+#Sign-In-page {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+#EP {
+  background-color: #1a8dff;
+  border-radius: 30px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 5vw;
+  /* Use viewport units for padding */
+  max-width: 500px;
+  /* Limit maximum width */
+  margin: 10vw auto;
+  /* Center horizontally */
+  text-align: center;
+}
+
+#EP input {
+  padding: 1rem;
+  /* Responsive padding */
+  border-radius: 50px;
+  outline: 0;
+  margin: 10px;
+  width: 100%;
+  border: none;
+  height: 100%;
+  font-size: 1rem;
+  /* Responsive font size */
+}
+
+#EP #Email input {
+  padding: 5px;
+  border-radius: 50px;
+  outline: 0;
+  margin: 10px;
+  width: 100%;
+  border: none;
+  height: 100%;
+}
+
+#EP #Pass input {
+  padding: 5px;
+  border-radius: 50px;
+  outline: 0;
+  margin: 10px;
+  width: 100%;
+  border: none;
+  height: 100%;
+}
+
+/* Base styles for the sign-in button */
+#Sign-In-page button {
+  background-color: #dda923;
+  color: white;
+  border: none;
+  border-radius: 500px;
+  padding: 5px 25px;
+  right: 50px;
+  align-items: center;
+}
+
+/* Hover effect for the sign-in button */
+#Sign-In-page button:hover {
+  background-color: #e7c365;
+}
+
+/* Styles for the newpage link */
+#newpage {
+  text-decoration: none;
+  color: black;
+  margin: 0px;
+}
+
+/* Media query for screens up to 450px wide */
+@media screen and (max-width: 450px) {
+
+  #landing_page_width {
+    width: 100%;
+    height: 85vh;
+    font-size: 20px;
+  }
+
+
+  /* Adjust font size for .Products_cards */
+  .Products_cards {
+    font-size: 14px;
+  }
+
+  /* Hide searchbar and search elements */
+  #searchbar,
+  #search {
+    display: none;
+  }
+
+  /* Resize header image */
+  #header img {
+    width: 60px;
+  }
+
+  /* Adjust h1 font size and padding in landing_page */
+  #landing_page h1 {
+    width: 100%;
+    font-size: 8px;
+    text-align: right;
+    margin-top: -10px;
+  }
+
+  /* Add top padding to landing_page p */
+  #landing_page p {
+    padding-top: 17px;
+    font-size: 12px;
+    margin: 0px 0px 40px 10px;
+
+
+  }
+
+  /* Hide button inside headerlinksbtn */
+
+  #headerlinksbtn button {
+    background-color: #dda923;
+    color: white;
+    border: none;
+    border-radius: 500px;
+    padding: 5px 10px;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 9px;
+
+  }
+
+
+  /* Adjust font size and margin for landing_page p */
+
+  /* Hide landing_page_image and links inside Header_links */
+  #landing_page_image,
+  #Header_links a {
+    display: none;
+  }
+
+  #cards {
+    width: 82%;
+    background-color: #ececec;
+    border-radius: 20px;
+  }
+}

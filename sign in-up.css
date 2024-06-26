@@ -1,0 +1,110 @@
+
+body {
+    font-family: "Oswald", sans-serif;
+    background: url(back.jpg) no-repeat;
+    background-size: cover;
+}
+#Sign-In-page {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+  }
+  #EP {
+background: transparent;
+    border-radius: 30px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+  backdrop-filter: blur(90px);
+    margin: 180px;
+    text-align: center;
+    width: 500px;
+    height: 100%;
+    border: 2px solid;
+  }
+  
+  #EP #Email input {
+    padding: 5px;
+    border-radius: 50px;
+    outline: 0;
+    margin: 10px;
+    width: 100%;
+    border: none;
+    height: 100%;
+  }
+  
+  #EP #Pass input  {
+    padding: 5px;
+    border-radius: 50px;
+    outline: 0;
+    margin: 10px;
+    width: 100%;
+    border: none;
+    height: 100%;
+  }
+  
+  #Sign-In-page button {
+    background-color: #dda923;
+    color: white;
+    border: none;
+    border-radius: 500px;
+    padding: 5px 25px;
+    right: 50px;
+    align-items: center;
+  }
+  
+  #Sign-In-page button:hover {
+    background-color: #e7c365;
+  }
+
+  #btnsignin{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  #btnsignin span{
+    display: flex;
+
+  }
+  #btnsignin a {
+text-decoration: none;
+color: white;
+justify-content: space-between;
+align-items: center;
+display: flex;
+padding:0px 0px 10px 15px;
+text-align: center;  }
+
+  #Pass input{
+    padding: 10px;
+
+  }
+
+  #Email input{
+
+padding:50px;
+  }
+
+  #btnsignup span{
+    display: flex;
+    padding:0px 0px 10px 15px;
+  }
+  
+
+  #btnsignup a{
+    text-decoration: none;
+    color: white;
+
+    align-items: center;
+    display: flex;
+    padding:0px 0px 10px 15px;
+    text-align: center;
+  }
+  
+
+  
+
+
+
+
